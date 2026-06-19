@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PSR Constructions — Chittoor, Andhra Pradesh</title>
+  <meta name="description" content="PSR Constructions — Trusted construction company in Chittoor, AP. Residential, Commercial, Villa, Duplex, Industrial projects. 100+ projects, 5+ years experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="navbar-logo" onclick="scrollToSection('home'); return false;">
+      <div class="logo-mark">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M10 2L18 7V13L10 18L2 13V7L10 2Z" stroke="#F97316" stroke-width="1" fill="none"/>
+          <path d="M10 6L14 8.5V13.5L10 16L6 13.5V8.5L10 6Z" fill="#F97316" fill-opacity="0.2" stroke="#F97316" stroke-width="0.5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">PSR Constructions</span>
+        <span class="logo-tagline">Chittoor, Andhra Pradesh</span>
+      </div>
+    </a>
+    <ul class="navbar-links">
+      <li><a href="#home" class="nav-link" onclick="scrollToSection('home'); return false;">Home</a></li>
+      <li><a href="#about" class="nav-link" onclick="scrollToSection('about'); return false;">About</a></li>
+      <li><a href="#services" class="nav-link" onclick="scrollToSection('services'); return false;">Services</a></li>
+      <li><a href="#projects" class="nav-link" onclick="scrollToSection('projects'); return false;">Projects</a></li>
+      <li><a href="#gallery" class="nav-link" onclick="scrollToSection('gallery'); return false;">Gallery</a></li>
+      <li><a href="#contact" class="nav-link" onclick="scrollToSection('contact'); return false;">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/919738885999" target="_blank" rel="noopener noreferrer" class="navbar-cta">Free Consultation</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <a href="#home" class="mobile-nav-link" onclick="scrollToSection('home'); closeMobileNav(); return false;">Home</a>
+  <a href="#about" class="mobile-nav-link" onclick="scrollToSection('about'); closeMobileNav(); return false;">About</a>
+  <a href="#services" class="mobile-nav-link" onclick="scrollToSection('services'); closeMobileNav(); return false;">Services</a>
+  <a href="#projects" class="mobile-nav-link" onclick="scrollToSection('projects'); closeMobileNav(); return false;">Projects</a>
+  <a href="#gallery" class="mobile-nav-link" onclick="scrollToSection('gallery'); closeMobileNav(); return false;">Gallery</a>
+  <a href="#contact" class="mobile-nav-link" onclick="scrollToSection('contact'); closeMobileNav(); return false;">Contact</a>
+  <a href="https://wa.me/919738885999" target="_blank" rel="noopener noreferrer" class="mobile-nav-cta" onclick="closeMobileNav();">WhatsApp Us</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-glow" id="heroGlow"></div>
+  <div class="hero-bg">
+    <img class="hero-bg-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=85&auto=format&fit=crop" alt="" loading="eager" />
+    <div class="hero-overlay"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-accent"></div>
+  <div class="hero-side-stats">
+    <div class="hero-side-stat anim-slide-right" style="animation-delay:1.3s"><span class="hero-side-stat-number">100+</span><span class="hero-side-stat-label">Projects Done</span></div>
+    <div class="hero-side-stat anim-slide-right" style="animation-delay:1.45s"><span class="hero-side-stat-number">5+</span><span class="hero-side-stat-label">Years Active</span></div>
+    <div class="hero-side-stat anim-slide-right" style="animation-delay:1.6s"><span class="hero-side-stat-number">95%</span><span class="hero-side-stat-label">Clients Satisfied</span></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-label anim-fade-up" style="animation-delay:0.5s">
+      <span class="hero-label-line"></span>
+      <span class="hero-label-text">PSR Constructions · Chittoor, AP</span>
+    </div>
+    <h1 class="hero-headline anim-fade-up" style="animation-delay:0.65s">
+      <span>Building</span>
+      <span class="line-italic">Excellence</span>
+      <span class="line-sub">Since 2020</span>
+    </h1>
+    <p class="hero-subheadline anim-fade-up" style="animation-delay:0.8s">
+      Trusted construction partner for Residential, Commercial, Industrial and Villa projects across Andhra Pradesh. Quality craftsmanship, on time.
+    </p>
+    <div class="hero-meta anim-fade-up" style="animation-delay:0.95s">
+      <div class="hero-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Chittoor, Andhra Pradesh</span>
+      </div>
+      <div class="hero-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        <span>Established 2020</span>
+      </div>
+    </div>
+    <div class="hero-buttons anim-fade-up" style="animation-delay:1.1s">
+      <button class="btn-primary" onclick="scrollToSection('contact')">
+        <span>Get Free Consultation</span>
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M8 2L13 7L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="btn-outline btn-outline-light" onclick="scrollToSection('projects')">
+        <span>View Projects</span>
+      </button>
+    </div>
+  </div>
+  <button class="hero-scroll" onclick="scrollToSection('about')" aria-label="Scroll to about section">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </button>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="scroll-reveal slide-left">
+        <div class="section-tag">About PSR Construction</div>
+        <h2 class="section-title">Building Trust Since <span>2020</span></h2>
+        <div class="gold-divider" style="margin:24px 0 28px;"></div>
+        <p class="about-description" style="font-size:16px;color:var(--text-body);">PSR Construction is a trusted construction company established in 2020. With over 5 years of experience and more than 100 successfully completed projects, we specialise in residential, commercial, industrial, renovation, villa, duplex, and independent house projects across Andhra Pradesh.</p>
+        <p class="about-description">We focus on quality workmanship, transparency, timely delivery, and customer satisfaction. From the first site visit to the final handover, every stage is supervised by experienced civil engineers — ensuring your investment is protected and your vision is realised.</p>
+        <div class="about-signature">
+          <div class="signature-avatar">S</div>
+          <div class="signature-info">
+            <div class="signature-name">Surendaran</div>
+            <div class="signature-role">Founder &amp; Managing Director, PSR Construction</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-reveal slide-right">
+        <div class="about-values">
+          <div class="value-item">
+            <div class="value-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div class="value-content"><h4 class="value-title">Uncompromised Quality</h4><p class="value-desc">ISI-marked materials and proven techniques on every project — no shortcuts, ever.</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div class="value-content"><h4 class="value-title">On-Time Delivery</h4><p class="value-desc">Systematic planning ensures your home or building is handed over on the committed date.</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="value-content"><h4 class="value-title">Vastu-Compliant Planning</h4><p class="value-desc">Every home designed with Vastu Shastra principles for positive energy and prosperity.</p></div>
+          </div>
+        </div>
+        <div class="biz-hours-card">
+          <div class="biz-hours-title">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Business Hours
+          </div>
+          <div class="biz-hours-row"><span class="biz-day">Monday – Saturday</span><span class="biz-time">9:00 AM – 6:30 PM</span></div>
+          <div class="biz-hours-row"><span class="biz-day">Sunday</span><span class="biz-time">9:00 AM – 2:00 PM</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-stats">
+      <div class="scroll-reveal fade-up" style="display:flex;align-items:center;justify-content:center;">
+        <div class="section-tag">Our Achievements</div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card scroll-reveal fade-up">
+          <span class="stat-number"><span class="counter" data-target="100">0</span><span class="stat-suffix">+</span></span>
+          <span class="stat-label">Projects Completed</span>
+          <p class="stat-desc">Residential, Commercial &amp; Industrial</p>
+        </div>
+        <div class="stat-card scroll-reveal fade-up" style="animation-delay:0.1s">
+          <span class="stat-number"><span class="counter" data-target="5">0</span><span class="stat-suffix">+</span></span>
+          <span class="stat-label">Years Experience</span>
+          <p class="stat-desc">Serving Chittoor since 2020</p>
+        </div>
+        <div class="stat-card scroll-reveal fade-up" style="animation-delay:0.2s">
+          <span class="stat-number"><span class="counter" data-target="95">0</span><span class="stat-suffix">%</span></span>
+          <span class="stat-label">Client Satisfaction</span>
+          <p class="stat-desc">Across Andhra Pradesh</p>
+        </div>
+        <div class="stat-card scroll-reveal fade-up" style="animation-delay:0.3s">
+          <span class="stat-number"><span class="counter" data-target="24">0</span><span class="stat-suffix">/7</span></span>
+          <span class="stat-label">Customer Support</span>
+          <p class="stat-desc">Always here when you need us</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header">
+      <div class="scroll-reveal slide-left">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">Our <span>Services</span></h2>
+      </div>
+      <div class="scroll-reveal fade-up">
+        <p class="services-header-desc">Comprehensive construction and civil services covering every aspect of your building needs — from planning to project handover.</p>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">01</span><div class="service-icon-emoji">🏗️</div><h3 class="service-title">Building Construction</h3><p class="service-desc">End-to-end building construction with superior structural quality and premium finish.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">02</span><div class="service-icon-emoji">🏠</div><h3 class="service-title">Home Building</h3><p class="service-desc">Custom homes tailored to your family's needs, lifestyle, and budget — built right.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">03</span><div class="service-icon-emoji">🏢</div><h3 class="service-title">Commercial Projects</h3><p class="service-desc">Shops, offices, and complexes designed for business growth and brand identity.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">04</span><div class="service-icon-emoji">🏭</div><h3 class="service-title">Industrial Construction</h3><p class="service-desc">Factories, warehouses, and industrial units with full safety and compliance.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">05</span><div class="service-icon-emoji">🏘️</div><h3 class="service-title">Residential Projects</h3><p class="service-desc">Premium residences and apartment developments across Chittoor and AP.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">06</span><div class="service-icon-emoji">🛖</div><h3 class="service-title">Villa Projects</h3><p class="service-desc">Luxury villas with premium aesthetics, Vastu alignment, and modern amenities.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">07</span><div class="service-icon-emoji">🏡</div><h3 class="service-title">Duplex Houses</h3><p class="service-desc">Smart duplex designs maximising space, privacy, and rental value.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">08</span><div class="service-icon-emoji">🏚️</div><h3 class="service-title">Independent Houses</h3><p class="service-desc">Stand-alone homes built with full customisation from foundation to finish.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">09</span><div class="service-icon-emoji">🔨</div><h3 class="service-title">Home Renovations</h3><p class="service-desc">Transform your existing space into something modern, functional, and beautiful.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">10</span><div class="service-icon-emoji">🧱</div><h3 class="service-title">Exterior Structural Repairs</h3><p class="service-desc">Crack repairs, waterproofing, and full exterior restoration services.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">11</span><div class="service-icon-emoji">🔧</div><h3 class="service-title">Interior Structural Repairs</h3><p class="service-desc">Beam repairs, wall restoration, and all internal structural fix work.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">12</span><div class="service-icon-emoji">🪵</div><h3 class="service-title">Interior Works</h3><p class="service-desc">False ceilings, carpentry, panelling, and premium interior finishes.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">13</span><div class="service-icon-emoji">🎨</div><h3 class="service-title">Exterior Works</h3><p class="service-desc">Painting, cladding, facade treatment, and exterior beautification.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">14</span><div class="service-icon-emoji">🔲</div><h3 class="service-title">Floor Fitting</h3><p class="service-desc">Marble, granite, vitrified tile — all types of quality floor laying.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">15</span><div class="service-icon-emoji">🏺</div><h3 class="service-title">Tile Work Installation</h3><p class="service-desc">Precision tile work for bathrooms, kitchens, and every area of your home.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">16</span><div class="service-icon-emoji">📐</div><h3 class="service-title">Planning &amp; Designing</h3><p class="service-desc">Architectural planning and 3D visualisation before a single brick is laid.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">17</span><div class="service-icon-emoji">🧭</div><h3 class="service-title">Planning with Vastu</h3><p class="service-desc">Vastu Shastra-compliant layouts for harmony, health, and prosperity.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">18</span><div class="service-icon-emoji">⚙️</div><h3 class="service-title">Civil Engineering Consulting</h3><p class="service-desc">Expert structural advice for safety, load capacity, and optimised design.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">19</span><div class="service-icon-emoji">📋</div><h3 class="service-title">Civil Consultancy</h3><p class="service-desc">Site assessment, material consulting, and construction guidance services.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">20</span><div class="service-icon-emoji">📊</div><h3 class="service-title">Billing &amp; Estimation</h3><p class="service-desc">Accurate cost estimation and transparent billing — no surprise charges.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">21</span><div class="service-icon-emoji">🗂️</div><h3 class="service-title">Construction Management</h3><p class="service-desc">Complete project management from planning and procurement to handover.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">22</span><div class="service-icon-emoji">👷</div><h3 class="service-title">Site Execution</h3><p class="service-desc">Professional on-site execution with skilled workforce and tight supervision.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">23</span><div class="service-icon-emoji">🔍</div><h3 class="service-title">Site Supervision</h3><p class="service-desc">Daily supervision ensuring quality standards are maintained at all stages.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">24</span><div class="service-icon-emoji">🚗</div><h3 class="service-title">Site Visit</h3><p class="service-desc">Free site visits to assess your requirements and provide expert consultation.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">25</span><div class="service-icon-emoji">🚜</div><h3 class="service-title">Construction Site Excavation</h3><p class="service-desc">Safe and efficient excavation for all foundation and site clearing needs.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+      <div class="service-card scroll-reveal fade-up"><span class="service-number">26</span><div class="service-icon-emoji">🏆</div><h3 class="service-title">Project Management (PMC)</h3><p class="service-desc">Full PMC services — planning, monitoring, execution, and final delivery.</p><div class="service-link"><span>Enquire Now</span><span class="service-link-arrow"></span></div></div>
+    </div>
+    <div class="services-bottom scroll-reveal fade-up">
+      <button class="btn-primary" onclick="scrollToSection('contact')">
+        <span>Get Free Consultation</span>
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M8 2L13 7L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="whyus" id="whyus">
+  <div class="container">
+    <div class="whyus-header">
+      <div class="scroll-reveal slide-left">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="section-title">The PSR <span>Advantage</span></h2>
+      </div>
+      <div class="scroll-reveal fade-up">
+        <p class="whyus-header-desc">Choosing the right construction partner is the most important decision you will make. Here's why hundreds of families across Andhra Pradesh trust PSR Construction.</p>
+      </div>
+    </div>
+    <div class="whyus-grid">
+      <div class="whyus-card scroll-reveal fade-up" style="--accent:#D4AF37">
+        <div class="whyus-icon-wrap" style="border-color:rgba(212,175,55,0.35);background:rgba(212,175,55,0.1);color:#D4AF37"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/><polyline points="16 11 17.5 13 20 10"/></svg></div>
+        <div><h4 class="whyus-title">5+ Years Experience</h4><p class="whyus-text">Proven track record in construction across Chittoor and Andhra Pradesh since 2020.</p></div>
+        <span class="whyus-card-number">01</span>
+      </div>
+      <div class="whyus-card scroll-reveal fade-up" style="--accent:#22c55e">
+        <div class="whyus-icon-wrap" style="border-color:rgba(34,197,94,0.35);background:rgba(34,197,94,0.1);color:#22c55e"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+        <div><h4 class="whyus-title">100+ Completed Projects</h4><p class="whyus-text">Residential, commercial, industrial, and villa projects delivered with full satisfaction.</p></div>
+        <span class="whyus-card-number">02</span>
+      </div>
+      <div class="whyus-card scroll-reveal fade-up" style="--accent:#3b82f6">
+        <div class="whyus-icon-wrap" style="border-color:rgba(59,130,246,0.35);background:rgba(59,130,246,0.1);color:#3b82f6"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+        <div><h4 class="whyus-title">Expert Engineers</h4><p class="whyus-text">Qualified civil engineers and architects ensuring structural soundness and design excellence.</p></div>
+        <span class="whyus-card-number">03</span>
+      </div>
+      <div class="whyus-card scroll-reveal fade-up" style="--accent:#f59e0b">
+        <div class="whyus-icon-wrap" style="border-color:rgba(245,158,11,0.35);background:rgba(245,158,11,0.1);color:#f59e0b"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div><h4 class="whyus-title">On-Time Delivery</h4><p class="whyus-text">Systematic planning and daily supervision ensure projects are handed over on schedule.</p></div>
+        <span class="whyus-card-number">04</span>
+      </div>
+      <div class="whyus-card scroll-reveal fade-up" style="--accent:#ef4444">
+        <div class="whyus-icon-wrap" style="border-color:rgba(239,68,68,0.35);background:rgba(239,68,68,0.1);color:#ef4444"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div><h4 class="whyus-title">Premium Materials</h4><p class="whyus-text">Only ISI-marked cement, branded steel, and top-quality materials. No shortcuts, ever.</p></div>
+        <span class="whyus-card-number">05</span>
+      </div>
+      <div class="whyus-card scroll-reveal fade-up" style="--accent:#8b5cf6">
+        <div class="whyus-icon-wrap" style="border-color:rgba(139,92,246,0.35);background:rgba(139,92,246,0.1);color:#8b5cf6"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <div><h4 class="whyus-title">Transparent Pricing</h4><p class="whyus-text">Detailed cost breakdown before work begins. No hidden charges at any stage of the project.</p></div>
+        <span class="whyus-card-number">06</span>
+      </div>
+      <div class="whyus-card scroll-reveal fade-up" style="--accent:#10b981">
+        <div class="whyus-icon-wrap" style="border-color:rgba(16,185,129,0.35);background:rgba(16,185,129,0.1);color:#10b981"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div><h4 class="whyus-title">Dedicated Supervision</h4><p class="whyus-text">Experienced site supervisors present every day monitoring quality and safety at all stages.</p></div>
+        <span class="whyus-card-number">07</span>
+      </div>
+      <div class="whyus-card scroll-reveal fade-up" style="--accent:#f97316">
+        <div class="whyus-icon-wrap" style="border-color:rgba(249,115,22,0.35);background:rgba(249,115,22,0.1);color:#f97316"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div><h4 class="whyus-title">Vastu Planning Support</h4><p class="whyus-text">Vastu Shastra-compliant designs available free to bring positive energy to your home.</p></div>
+        <span class="whyus-card-number">08</span>
+      </div>
+    </div>
+    <div class="whyus-cta-strip scroll-reveal fade-up">
+      <div class="whyus-cta-text">
+        <span class="whyus-cta-headline">Ready to start your project?</span>
+        <span class="whyus-cta-sub">Get a free site visit and consultation — no obligation.</span>
+      </div>
+      <div class="whyus-cta-actions">
+        <a href="https://wa.me/919738885999" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>WhatsApp Now</span>
+          <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M8 2L13 7L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="tel:+919738885999" class="btn-outline">Call Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="projects-header">
+      <div class="scroll-reveal slide-left">
+        <div class="section-tag">Our Portfolio</div>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+      </div>
+    </div>
+    <div class="projects-filter scroll-reveal fade-up">
+      <button class="filter-btn active" data-filter="All"><span>All</span></button>
+      <button class="filter-btn" data-filter="Completed"><span>Completed</span></button>
+      <button class="filter-btn" data-filter="Ongoing"><span>Ongoing</span></button>
+      <button class="filter-btn" data-filter="Upcoming"><span>Upcoming</span></button>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-1.jpeg" alt="Luxury Villa" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Luxury Villa</h3><span class="project-sqft"></span><div class="project-meta"><span>Chittoor, AP</span><span class="project-meta-divider"></span><span>2024</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-2.jpeg" alt="Premium Villa" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Premium Villa</h3><span class="project-sqft"></span><div class="project-meta"><span>Tirupati, AP</span><span class="project-meta-divider"></span><span>2024</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-3.jpeg" alt="Independent House" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Independent House</h3><span class="project-sqft"></span><div class="project-meta"><span>Chittoor, AP</span><span class="project-meta-divider"></span><span>2024</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-4.jpeg" alt="Duplex House" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Duplex House</h3><span class="project-sqft"></span><div class="project-meta"><span>Kuppam, AP</span><span class="project-meta-divider"></span><span>2023</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-5.jpeg" alt="Commercial Complex" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Commercial Complex</h3><span class="project-sqft"></span><div class="project-meta"><span>Chittoor, AP</span><span class="project-meta-divider"></span><span>2023</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-6.jpeg" alt="Apartment Development" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Apartment Development</h3><span class="project-sqft"></span><div class="project-meta"><span>Tirupati, AP</span><span class="project-meta-divider"></span><span>2023</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-7.jpeg" alt="Apartment Development" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Apartment Development</h3><span class="project-sqft"></span><div class="project-meta"><span>Tirupati, AP</span><span class="project-meta-divider"></span><span>2023</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-8.jpeg" alt="Apartment Development" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Apartment Development</h3><span class="project-sqft"></span><div class="project-meta"><span>Tirupati, AP</span><span class="project-meta-divider"></span><span>2023</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-9.jpeg" alt="Apartment Development" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Apartment Development</h3><span class="project-sqft"></span><div class="project-meta"><span>Tirupati, AP</span><span class="project-meta-divider"></span><span>2023</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-10.jpeg" alt="Apartment Development" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Apartment Development</h3><span class="project-sqft"></span><div class="project-meta"><span>Tirupati, AP</span><span class="project-meta-divider"></span><span>2023</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Completed"><div class="project-image"><img src="images/completed-project-11.jpeg" alt="Apartment Development" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#22c55e"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:6px;"></span>Completed</div><h3 class="project-name">Apartment Development</h3><span class="project-sqft"></span><div class="project-meta"><span>Tirupati, AP</span><span class="project-meta-divider"></span><span>2023</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Ongoing"><div class="project-image"><img src="images/ongoing-project-1.jpeg" alt="Gated Community" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#f59e0b"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;margin-right:6px;"></span>Ongoing</div><h3 class="project-name">Gated Community</h3><span class="project-sqft"></span><div class="project-meta"><span>Chittoor, AP</span><span class="project-meta-divider"></span><span>2025</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Ongoing"><div class="project-image"><img src="images/ongoing-project-2.jpeg" alt="Shopping Complex" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#f59e0b"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;margin-right:6px;"></span>Ongoing</div><h3 class="project-name">Apartment Development</h3><span class="project-sqft"></span><div class="project-meta"><span>Tirupati, AP</span><span class="project-meta-divider"></span><span>2025</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Ongoing"><div class="project-image"><img src="images/ongoing-project-3.jpeg" alt="Gated Community" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#f59e0b"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;margin-right:6px;"></span>Ongoing</div><h3 class="project-name">Independent House</h3><span class="project-sqft"></span><div class="project-meta"><span>Chittoor, AP</span><span class="project-meta-divider"></span><span>2025</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Ongoing"><div class="project-image"><img src="images/ongoing-project-4.jpeg" alt="Gated Community" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#f59e0b"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;margin-right:6px;"></span>Ongoing</div><h3 class="project-name">Shopping Complex</h3><span class="project-sqft"></span><div class="project-meta"><span>Chittoor, AP</span><span class="project-meta-divider"></span><span>2025</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Ongoing"><div class="project-image"><img src="images/ongoing-project-5.jpeg" alt="Gated Community" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#f59e0b"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;margin-right:6px;"></span>Ongoing</div><h3 class="project-name">Independent Villa</h3><span class="project-sqft"></span><div class="project-meta"><span>Chittoor, AP</span><span class="project-meta-divider"></span><span>2025</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+      <div class="project-card" data-cat="Upcoming"><div class="project-image"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80&auto=format&fit=crop" alt="Smart Homes" loading="lazy"/></div><div class="project-overlay"></div><div class="project-content"><div class="project-category" style="color:#3b82f6"><span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;margin-right:6px;"></span>Upcoming</div><h3 class="project-name">Smart Homes</h3><span class="project-sqft"></span><div class="project-meta"><span>Chittoor, AP</span><span class="project-meta-divider"></span><span>2026</span></div><div class="project-details"><p class="project-detail-text"></p></div></div></div>
+    </div>
+    <div class="projects-cta scroll-reveal fade-up">
+      <button class="btn-outline" onclick="scrollToSection('contact')"><span>Start Your Project</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="scroll-reveal slide-left">
+      <div class="section-tag">Project Gallery</div>
+      <h2 class="section-title">Our Work <span>in Pictures</span></h2>
+      <p class="gallery-sub">Visual portfolio of completed and ongoing projects across Chittoor and Andhra Pradesh.</p>
+    </div>
+    <div class="gallery-filters scroll-reveal fade-up">
+      <button class="gallery-filter-btn active" data-gfilter="All"><span>All</span></button>
+      <button class="gallery-filter-btn" data-gfilter="Villa"><span>Villa</span></button>
+      <button class="gallery-filter-btn" data-gfilter="Residential"><span>Residential</span></button>
+      
+      <button class="gallery-filter-btn" data-gfilter="Interior"><span>Interior</span></button>
+      
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item gallery-span2" data-gtag="Villa" role="button" tabindex="0" aria-label="View: Luxury Villa Construction, Chittoor" onclick="openLightbox(0)">
+        <img src="images/completed-project-13.jpeg" alt="Luxury Villa Construction, Chittoor" loading="lazy" class="gallery-img"/>
+        <div class="gallery-overlay"><span class="gallery-tag" style="background:#D4AF37">Villa</span><div class="gallery-zoom-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><p class="gallery-caption">Luxury Villa Construction, Chittoor</p></div>
+      </div>
+      <div class="gallery-item" data-gtag="Residential" role="button" tabindex="0" aria-label="View: Modern Independent House" onclick="openLightbox(1)">
+        <img src="images/completed-project-3.jpeg" alt="Modern Independent House" loading="lazy" class="gallery-img"/>
+        <div class="gallery-overlay"><span class="gallery-tag" style="background:#3b82f6">Residential</span><div class="gallery-zoom-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><p class="gallery-caption">Modern Independent House</p></div>
+      </div>
+      
+      <div class="gallery-item gallery-span2" data-gtag="Villa" role="button" tabindex="0" aria-label="View: Premium Villa with Garden" onclick="openLightbox(3)">
+        <img src="images/completed-project-14.jpeg" alt="Premium Villa with Garden" loading="lazy" class="gallery-img"/>
+        <div class="gallery-overlay"><span class="gallery-tag" style="background:#D4AF37">Villa</span><div class="gallery-zoom-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><p class="gallery-caption">Premium Villa with Garden</p></div>
+      </div>
+      <div class="gallery-item" data-gtag="Interior" role="button" tabindex="0" aria-label="View: Interior Design" onclick="openLightbox(4)">
+        <img src="images/completed-project-6.jpeg" alt="Interior Design" loading="lazy" class="gallery-img"/>
+        <div class="gallery-overlay"><span class="gallery-tag" style="background:#10b981">Interior</span><div class="gallery-zoom-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><p class="gallery-caption">Interior Design &amp; Fit-Out</p></div>
+      </div>
+      
+      <div class="gallery-item" data-gtag="Interior" role="button" tabindex="0" aria-label="View: Luxury Home Interior" onclick="openLightbox(8)">
+        <img src="images/completed-project-7.jpeg" alt="Luxury Home Interior" loading="lazy" class="gallery-img"/>
+        <div class="gallery-overlay"><span class="gallery-tag" style="background:#10b981">Interior</span><div class="gallery-zoom-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><p class="gallery-caption">Luxury Home Interior</p></div>
+      </div>
+      <div class="gallery-item" data-gtag="Interior" role="button" tabindex="0" aria-label="View: Luxury Home Interior" onclick="openLightbox(8)">
+        <img src="images/completed-project-8.jpeg" alt="Luxury Home Interior" loading="lazy" class="gallery-img"/>
+        <div class="gallery-overlay"><span class="gallery-tag" style="background:#10b981">Interior</span><div class="gallery-zoom-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><p class="gallery-caption">Luxury Home Interior</p></div>
+      </div>
+    </div>
+  </div>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg"/>
+      <div class="lightbox-bar">
+        <span class="lightbox-tag" id="lightboxTag"></span>
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+      </div>
+      <button class="lightbox-nav lightbox-prev" onclick="lbPrev()" aria-label="Previous">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="lightbox-nav lightbox-next" onclick="lbNext()" aria-label="Next">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="scroll-reveal slide-left">
+      <div class="section-tag">Client Reviews</div>
+      <h2 class="section-title">What Our <span>Clients Say</span></h2>
+      <p class="testi-subtitle">Trusted by 100+ families and businesses across Chittoor, Tirupati, Madanapalle, Kuppam and Andhra Pradesh.</p>
+    </div>
+    <div class="scroll-reveal fade-up">
+      <div class="testi-carousel-wrap">
+        <button class="testi-nav testi-nav-prev" onclick="testiPrev()" aria-label="Previous reviews">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="testi-carousel" id="testiCarousel" aria-live="polite">
+          <div class="testi-track" id="testiTrack"></div>
+        </div>
+        <button class="testi-nav testi-nav-next" onclick="testiNext()" aria-label="Next reviews">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+      <div class="testi-dots" id="testiDots" role="tablist"></div>
+      <div class="testi-progress"><div class="testi-progress-fill" id="testiProgressFill"></div></div>
+      <p class="testi-count" id="testiCount"></p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="scroll-reveal slide-left">
+        <div class="section-tag">Contact Us</div>
+        <h2 class="section-title">Let's Build <span>Together</span></h2>
+        <div class="gold-divider" style="margin:20px 0 24px;"></div>
+        <p class="contact-intro">Ready to start your construction project? Contact PSR Construction for a free site visit and consultation. We serve Chittoor, Tirupati, Madanapalle, Kuppam and all of Andhra Pradesh.</p>
+        <div class="contact-methods">
+          <a href="tel:+919738885999" class="contact-method">
+            <div class="contact-method-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 13a19.79 19.79 0 01-3.07-8.67A2 2 0 013.6 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.57a16 16 0 006.29 6.29l.94-.94a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div class="contact-method-info"><span class="contact-method-label">Call Us</span><span class="contact-method-value">+91 97388 85999</span></div>
+            <span class="contact-method-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="https://wa.me/919738885999" target="_blank" rel="noopener noreferrer" class="contact-method">
+            <div class="contact-method-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+            <div class="contact-method-info"><span class="contact-method-label">WhatsApp</span><span class="contact-method-value">+91 97388 85999</span></div>
+            <span class="contact-method-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="mailto:psrconstructions@gmail.com" class="contact-method">
+            <div class="contact-method-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div class="contact-method-info"><span class="contact-method-label">Email Us</span><span class="contact-method-value">psrconstructions@gmail.com</span></div>
+            <span class="contact-method-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+        </div>
+        <div class="contact-address">
+          <span class="contact-address-label">Office Address</span>
+          <p class="contact-address-text">Besides Blue Dart Courier,<br/>27/959, Palamaner Rd,<br/>Ram Nagar Colony,<br/>Chittoor, Andhra Pradesh 517002</p>
+        </div>
+        <div class="contact-hours">
+          <span class="contact-address-label">Business Hours</span>
+          <div class="hours-row"><span>Mon – Sat</span><span>9:00 AM – 6:30 PM</span></div>
+          <div class="hours-row"><span>Sunday</span><span>9:00 AM – 2:00 PM</span></div>
+        </div>
+        <div class="maps-buttons">
+          <button class="maps-btn maps-btn-view" onclick="window.open('https://maps.google.com/?q=13.2175,79.1000','_blank','noopener')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>View on Google Maps</span>
+          </button>
+          <button class="maps-btn maps-btn-dir" id="dirBtn" onclick="getDirections()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" id="dirIcon"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            <span id="dirText">Get Directions</span>
+          </button>
+        </div>
+        <p class="geo-status" id="geoStatus"></p>
+        <div class="contact-map">
+          <iframe title="PSR Constructions Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15513.6!2d79.1000!3d13.2175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDEzJzAzLjAiTiA3OcKwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1" width="100%" height="220" style="border:0;display:block;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="scroll-reveal slide-right">
+        <div class="contact-form-wrap" id="formWrap">
+          <h3 class="contact-form-title">Get Free Consultation</h3>
+          <p class="contact-form-sub">Fill in the details and we'll get back to you within 24 hours.</p>
+          <div class="form-instant-strip">
+            <span class="form-instant-label">Or contact us instantly:</span>
+            <div class="form-instant-btns">
+              <a href="https://wa.me/919738885999" target="_blank" rel="noopener noreferrer" class="form-instant-wa">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+              </a>
+              <a href="tel:+919738885999" class="form-instant-call">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 13a19.79 19.79 0 01-3.07-8.67A2 2 0 013.6 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.57a16 16 0 006.29 6.29l.94-.94a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Call Now
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ FormSubmit form — sends to gnanasekar.p.s.cse.2023@ritchennai.edu.in -->
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formsubmit.co/gnanasekar.p.s.cse.2023@ritchennai.edu.in"
+            method="POST"
+          >
+            <!-- FormSubmit hidden config fields -->
+            <input type="hidden" name="_subject"  value="New Enquiry — PSR Construction Website" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha"  value="false" />
+            <input type="hidden" name="_next"      value="https://yourwebsite.com/thankyou.html" />
+            <!-- ⚠️ Replace the _next URL above with your actual thank-you page or remove the line to stay on same page -->
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fname">Full Name *</label>
+                <input id="fname" class="form-input" name="name" type="text" placeholder="Your full name" autocomplete="name" required />
+                <span class="form-error" id="err-name"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="fphone">Phone Number *</label>
+                <input id="fphone" class="form-input" name="phone" type="tel" placeholder="+91 XXXXX XXXXX" autocomplete="tel" required />
+                <span class="form-error" id="err-phone"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="femail">Email Address</label>
+              <input id="femail" class="form-input" name="email" type="email" placeholder="Optional" autocomplete="email" />
+              <span class="form-error" id="err-email"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ftype">Project Type *</label>
+              <select id="ftype" class="form-select" name="project_type" required>
+                <option value="">Select project type</option>
+                <option>Residential Construction</option>
+                <option>Villa Construction</option>
+                <option>Duplex House</option>
+                <option>Independent House</option>
+                <option>Commercial Construction</option>
+                <option>Industrial Project</option>
+                <option>Home Renovation</option>
+                <option>Interior Works</option>
+                <option>Exterior Works</option>
+                <option>Floor Fitting / Tile Work</option>
+                <option>Planning &amp; Designing</option>
+                <option>Civil Consultancy</option>
+                <option>Project Management (PMC)</option>
+                <option>Other</option>
+              </select>
+              <span class="form-error" id="err-type"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="fmessage">Message / Requirements *</label>
+              <textarea id="fmessage" class="form-textarea" name="message" rows="5" placeholder="Tell us about your project — location, size, budget, timeline…" required></textarea>
+              <span class="form-error" id="err-message"></span>
+            </div>
+
+            <button class="form-submit" id="formSubmit" type="submit">
+              <span>Send Enquiry</span>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M8 2L13 7L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+          <!-- end FormSubmit form -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-top-inner">
+        <h2 class="footer-top-headline">Ready to Build Your <span>Dream Project?</span></h2>
+        <div class="footer-top-cta">
+          <a href="https://wa.me/919738885999" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:inline-flex;align-items:center;gap:10px;">
+            <span>WhatsApp Us Now</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M8 2L13 7L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo" onclick="scrollToSection('home'); return false;">
+          <div class="footer-logo-mark"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L18 7V13L10 18L2 13V7L10 2Z" stroke="#F97316" stroke-width="1" fill="none"/><path d="M10 6L14 8.5V13.5L10 16L6 13.5V8.5L10 6Z" fill="#F97316" fill-opacity="0.2" stroke="#F97316" stroke-width="0.5"/></svg></div>
+          <div><span class="footer-logo-name">PSR Constructions</span><span class="footer-logo-tagline">Excellence in Every Build</span></div>
+        </a>
+        <p class="footer-desc">Building homes, villas, and commercial spaces across Chittoor and Andhra Pradesh since 2020. Founded by Surendaran with a commitment to quality, transparency, and client satisfaction.</p>
+        <div class="footer-stats">
+          <div class="footer-stat"><span class="footer-stat-num">100+</span><span class="footer-stat-label">Projects</span></div>
+          <div class="footer-stat"><span class="footer-stat-num">5+</span><span class="footer-stat-label">Years</span></div>
+          <div class="footer-stat"><span class="footer-stat-num">95%</span><span class="footer-stat-label">Satisfaction</span></div>
+          <div class="footer-stat"><span class="footer-stat-num">2020</span><span class="footer-stat-label">Est.</span></div>
+        </div>
+        <div class="footer-badges">
+          <span class="footer-badge">Since 2020</span>
+          <span class="footer-badge">Chittoor, AP</span>
+          <span class="footer-badge">100+ Projects</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link" onclick="scrollToSection('home'); return false;">Home</a></li>
+          <li><a href="#about" class="footer-link" onclick="scrollToSection('about'); return false;">About Us</a></li>
+          <li><a href="#services" class="footer-link" onclick="scrollToSection('services'); return false;">Services</a></li>
+          <li><a href="#projects" class="footer-link" onclick="scrollToSection('projects'); return false;">Projects</a></li>
+          <li><a href="#gallery" class="footer-link" onclick="scrollToSection('gallery'); return false;">Gallery</a></li>
+          <li><a href="#testimonials" class="footer-link" onclick="scrollToSection('testimonials'); return false;">Testimonials</a></li>
+          <li><a href="#contact" class="footer-link" onclick="scrollToSection('contact'); return false;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="#services" class="footer-link" onclick="scrollToSection('services'); return false;">Building Construction</a></li>
+          <li><a href="#services" class="footer-link" onclick="scrollToSection('services'); return false;">Villa Projects</a></li>
+          <li><a href="#services" class="footer-link" onclick="scrollToSection('services'); return false;">Duplex Houses</a></li>
+          <li><a href="#services" class="footer-link" onclick="scrollToSection('services'); return false;">Home Renovations</a></li>
+          <li><a href="#services" class="footer-link" onclick="scrollToSection('services'); return false;">Interior Works</a></li>
+          <li><a href="#services" class="footer-link" onclick="scrollToSection('services'); return false;">Floor Fitting &amp; Tiles</a></li>
+          <li><a href="#services" class="footer-link" onclick="scrollToSection('services'); return false;">Planning &amp; Designing</a></li>
+          <li><a href="#services" class="footer-link" onclick="scrollToSection('services'); return false;">Project Management (PMC)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-contact-list">
+          <a href="tel:+919738885999" class="footer-contact-item">
+            <span class="footer-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 13a19.79 19.79 0 01-3.07-8.67A2 2 0 013.6 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.57a16 16 0 006.29 6.29l.94-.94a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></span>
+            <span class="footer-contact-text">+91 97388 85999</span>
+          </a>
+          <a href="https://wa.me/919738885999" class="footer-contact-item" target="_blank" rel="noopener noreferrer">
+            <span class="footer-contact-icon" style="color:#25D366"><svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
+            <span class="footer-contact-text">WhatsApp Us</span>
+          </a>
+          <a href="mailto:psrconstructions@gmail.com" class="footer-contact-item">
+            <span class="footer-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            <span class="footer-contact-text">psrconstructions@gmail.com</span>
+          </a>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span class="footer-contact-text">Besides Blue Dart Courier,<br/>27/959, Palamaner Rd,<br/>Chittoor, AP 517002</span>
+          </div>
+          <div class="footer-hours">
+            <div class="footer-hours-row"><span>Mon–Sat</span><span>9 AM – 6:30 PM</span></div>
+            <div class="footer-hours-row"><span>Sunday</span><span>9 AM – 2:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p class="footer-copyright">© <span id="footerYear"></span> <a href="#home" onclick="scrollToSection('home'); return false;">PSR Construction</a>. Founder: Surendaran · Chittoor, Andhra Pradesh · All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <a href="#">Sitemap</a>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 15l-6-6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CONTACT -->
+<nav class="fcp-wrapper" role="complementary" aria-label="Quick contact options">
+  <a href="https://wa.me/919738885999" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: Chat With Us" class="fcp-card fcp-whatsapp">
+    <span class="fcp-pulse-ring" aria-hidden="true"></span>
+    <div class="fcp-icon-wrap"><div class="fcp-icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div></div>
+    <div class="fcp-text"><span class="fcp-label">WhatsApp</span><span class="fcp-value">Chat With Us</span></div>
+    <span class="fcp-arrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
+  </a>
+  <a href="tel:+919738885999" aria-label="Call Now: +91 97388 85999" class="fcp-card fcp-call">
+    <div class="fcp-icon-wrap"><div class="fcp-icon-circle"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 13a19.79 19.79 0 01-3.07-8.67A2 2 0 013.6 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.57a16 16 0 006.29 6.29l.94-.94a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div></div>
+    <div class="fcp-text"><span class="fcp-label">Call Now</span><span class="fcp-value">+91 97388 85999</span></div>
+    <span class="fcp-arrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
+  </a>
+  <a href="mailto:psrconstructions@gmail.com" aria-label="Email Us" class="fcp-card fcp-email">
+    <div class="fcp-icon-wrap"><div class="fcp-icon-circle"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div></div>
+    <div class="fcp-text"><span class="fcp-label">Email Us</span><span class="fcp-value">psrconstructions@gmail.com</span></div>
+    <span class="fcp-arrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
