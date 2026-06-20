@@ -408,6 +408,8 @@ document.addEventListener('keydown', e => {
 
 /* ─────────────────────────────────────────
    13. CONTACT FORM VALIDATION & SUBMIT
+   (FormSubmit integration — fixed: real submit
+   wiring, real success/error handling, logging)
 ───────────────────────────────────────── */
 (function initContactForm() {
   const formWrap = $('#formWrap');
@@ -436,9 +438,6 @@ document.addEventListener('keydown', e => {
     const phone = getVal('#fphone').replace(/\s/g, '');
     if (!phone || !/^[+]?[\d]{10,15}$/.test(phone)) { setError('phone', 'Enter a valid 10-digit phone number.'); valid = false; }
 
-    const email = getVal('#femail');
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError('email', 'Enter a valid email address.'); valid = false; }
-
     const type = getVal('#ftype');
     if (!type) { setError('type', 'Please select a project type.'); valid = false; }
 
@@ -448,12 +447,22 @@ document.addEventListener('keydown', e => {
     return valid;
   }
 
+  /* Wire the form's submit event to this handler (was missing — form was
+     previously doing a native POST/page-navigation to FormSubmit and
+     never running this code at all). */
+  const formEl = $('#contactForm');
+  if (formEl) {
+    formEl.addEventListener('submit', (e) => {
+      e.preventDefault();
+      submitForm();
+    });
+  }
+
   window.submitForm = async function () {
     if (!validate()) return;
 
     const name    = getVal('#fname');
     const phone   = getVal('#fphone');
-    const email   = getVal('#femail');
     const type    = getVal('#ftype');
     const message = getVal('#fmessage');
 
@@ -475,10 +484,29 @@ document.addEventListener('keydown', e => {
       document.head.appendChild(s);
     }
 
+    function resetSubmitBtn() {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<span>Send Enquiry</span>
+          <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M8 2L13 7L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      }
+    }
+
+    function showError(message) {
+      resetSubmitBtn();
+      let errBanner = $('#formSubmitError');
+      if (!errBanner) {
+        errBanner = document.createElement('p');
+        errBanner.id = 'formSubmitError';
+        errBanner.style.cssText = 'color:#dc2626;font-size:12.5px;margin-top:10px;text-align:center;';
+        formEl?.appendChild(errBanner);
+      }
+      errBanner.textContent = `Sorry, your enquiry could not be sent: ${message}. Please try WhatsApp or call us instead.`;
+    }
+
     const formData = new FormData();
     formData.append('name',         name);
     formData.append('phone',        phone);
-    formData.append('email',        email || 'Not provided');
     formData.append('project_type', type);
     formData.append('message',      message);
     formData.append('_subject',     `New Enquiry from ${name} — PSR Construction`);
@@ -490,7 +518,6 @@ document.addEventListener('keydown', e => {
       `Hello PSR Construction!\n\n` +
       `*Name:* ${name}\n` +
       `*Phone:* ${phone}\n` +
-      (email ? `*Email:* ${email}\n` : '') +
       `*Project Type:* ${type}\n\n` +
       `*Message:*\n${message}\n\n` +
       `_(Sent from PSRConstruction website)_`
@@ -498,18 +525,30 @@ document.addEventListener('keydown', e => {
 
     try {
       const res = await fetch(
-        'https://formsubmit.co/ajax/gnanasekar.p.s.cse.2023@ritchennai.edu.in',
+        'https://formsubmit.co/ajax/gnanasekar26092005@gmail.com',
         { method: 'POST', body: formData }
       );
+
       const json = await res.json();
-      if (res.ok && json.success === 'true') {
+
+      /* Console logging for FormSubmit response, as requested */
+      console.log('FormSubmit response status:', res.status);
+      console.log('FormSubmit response body:', json);
+
+      if (res.ok && (json.success === true || json.success === 'true')) {
+        /* ── REAL SUCCESS ── */
         showSuccess(name, waText);
       } else {
-        throw new Error(json.message || 'FormSubmit error');
+        /* ── REAL FAILURE — show actual error, do NOT fake success ── */
+        const errMsg = json.message || `Unexpected response (status ${res.status})`;
+        console.error('FormSubmit reported failure:', errMsg, json);
+        showError(errMsg);
       }
+
     } catch (err) {
-      console.error('FormSubmit error:', err);
-      showSuccess(name, waText);
+      /* ── NETWORK / PARSE ERROR — show actual error, do NOT fake success ── */
+      console.error('FormSubmit request failed:', err);
+      showError(err.message || 'network error');
     }
   };
 
