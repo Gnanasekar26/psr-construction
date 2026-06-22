@@ -201,7 +201,12 @@ ul, ol { list-style: none; }
   box-shadow: 0 4px 28px rgba(109,40,217,0.08);
 }
 
-.navbar-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: -50px;
+}
 .logo-mark {
   width: 42px; height: 42px;
   border: 2px solid rgba(230,126,34,0.55);
@@ -210,6 +215,31 @@ ul, ol { list-style: none; }
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(8px);
   transition: transform var(--t-mid), background var(--t-mid);
+}
+.header-logo{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.logo-name{
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar.scrolled .logo-name{
+    color: var(--text-dark);
+}
+
+.logo-tagline{
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-top: 4px;
 }
 .logo-mark::before { display: none; }
 .navbar.scrolled .logo-mark { background: var(--orange-pale); }
