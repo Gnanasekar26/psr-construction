@@ -525,7 +525,7 @@ document.addEventListener('keydown', e => {
 
     try {
       const res = await fetch(
-        'https://formsubmit.co/ajax/gnanasekar26092005@gmail.com',
+        'https://formsubmit.co/ajax/psrconstructions@gmail.com',
         { method: 'POST', body: formData }
       );
 
