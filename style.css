@@ -241,6 +241,15 @@ ul, ol { list-style: none; }
     color: var(--orange);
     margin-top: 4px;
 }
+.logo-slogan{
+    display:block;
+    font-size:12px;
+    font-weight:500;
+    color:#ffffff;
+    letter-spacing:1px;
+    margin:3px 0;
+    opacity:0.9;
+}
 .logo-mark::before { display: none; }
 .navbar.scrolled .logo-mark { background: var(--orange-pale); }
 .navbar-logo:hover .logo-mark { transform: rotate(8deg) scale(1.06); }

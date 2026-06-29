@@ -296,14 +296,13 @@ document.addEventListener('keydown', e => {
 ───────────────────────────────────────── */
 (function initTestimonials() {
   const testimonials = [
-    { name: 'Ramesh Reddy',     location: 'Chittoor, AP',     stars: 5, text: 'PSR Construction built our dream home with exceptional quality and finished it exactly on time. Surendaran and his team were professional throughout. Highly recommend for anyone in Chittoor!' },
-    { name: 'Lakshmi Devi',     location: 'Tirupati, AP',     stars: 5, text: 'We got our villa constructed by PSR. The Vastu planning was excellent and the finishes are premium. The team was transparent about costs — no hidden surprises at all.' },
-    { name: 'Venkata Suresh',   location: 'Kuppam, AP',       stars: 5, text: 'The duplex house PSR built for us has a beautiful rooftop terrace. Build quality is excellent and they kept us updated at every stage. Will definitely work with them again.' },
-    { name: 'Padmavathi',       location: 'Madanapalle, AP',  stars: 5, text: 'I was nervous about home construction but PSR made the entire process smooth. Engineers visited regularly, materials were top-class, and our home looks stunning!' },
-    { name: 'Srinivas Kumar',   location: 'Chittoor, AP',     stars: 5, text: 'Commercial project delivered ahead of schedule. The structural quality is excellent and the finishes are clean. Our shop complex looks exactly as planned.' },
-    { name: 'Anitha Priya',     location: 'Tirupati, AP',     stars: 5, text: 'Home renovation by PSR was stress-free. They handled everything from design to execution. The interior work — false ceiling, tiles, carpentry — all top-notch.' },
-    { name: 'Gopal Naidu',      location: 'Chittoor, AP',     stars: 5, text: 'PSR handled our industrial warehouse project with great competence. Safety standards were maintained and the structure is solid. Excellent project management!' },
-    { name: 'Meena Kumari',     location: 'Srikalahasti, AP', stars: 5, text: 'The independent house PSR built for my family is everything we dreamed of. On-site supervision every day gave us confidence. Very satisfied with the outcome.' },
+    { name: 'Tatepallli kumar',     location: 'Chittoor, AP',     stars: 5, text: 'I found PSR Constructions (Surendra) through a Google search a year ago and chose the best option for my dream home. The quality is excellent, with perfect planning from design to execution, interiors, and painting. Surendra delivered everything promised, communicated well, and showed great dedication, honesty, and professionalism. I highly recommend PSR Constructions—choose them to start your dream home journey, as they live up to their tagline: “We build your Dream House.” Right people, right choice, best quality! Thank you, Surendra brother, for the amazing service. Wishing PSR continued success in fulfilling more dreams—our bond will last for future projects too.' },
+    { name: 'Shiva Kumar',     location: 'Tirupati, AP',     stars: 5, text: 'Very friendly builder he is having good experience about construction.I got very good experience in my own construction' },
+    { name: 'Dr G V K ',   location: 'Kuppam, AP',       stars: 5, text: 'Experienced,Trusted & Budget Friendly Constructions' },
+    { name: 'Sandhya Rani',       location: 'Madanapalle, AP',  stars: 5, text: 'They are maintaining Good quality,valuable services-We recommend the PSR Constructions' },
+    { name: 'Gnanasekar',   location: 'Chittoor, AP',     stars: 5, text: 'Commercial project delivered ahead of schedule. The structural quality is excellent and the finishes are clean. Our shop complex looks exactly as planned.' },
+    { name: 'Hareesh Gollapalli',     location: 'Gollapalli, AP',     stars: 5, text: 'Home renovation by PSR was stress-free. They handled everything from design to execution. The interior work — fall ceiling, tiles, carpentry — all services is good.' },
+    
   ];
 
   const track     = $('#testiTrack');
