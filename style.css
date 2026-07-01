@@ -189,10 +189,23 @@ ul, ol { list-style: none; }
 
 /* ===== NAVBAR ===== */
 .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: var(--z-nav); transition: all 0.45s var(--ease); }
+
+/* FIX: base .navbar-inner had no layout rule at all on desktop, so the
+   logo / links / CTA button were rendering as stacked block elements
+   instead of a single row — this is what caused the overlap with the
+   hero label underneath. This rule restores the flex row layout for
+   the default (unscrolled) state. */
 .navbar-inner {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 20px 48px; transition: all 0.45s var(--ease);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 22px 48px;
+  min-height: 90px;
+  width: 100%;
+  transition: all 0.45s var(--ease);
 }
+
 .navbar.scrolled .navbar-inner {
   padding: 12px 48px;
   background: rgba(255,255,255,0.94);
@@ -201,11 +214,11 @@ ul, ol { list-style: none; }
   box-shadow: 0 4px 28px rgba(109,40,217,0.08);
 }
 
-.navbar-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-left: -50px;
+.navbar-logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-left:-50px;
 }
 .logo-mark {
   width: 42px; height: 42px;
@@ -217,54 +230,64 @@ ul, ol { list-style: none; }
   transition: transform var(--t-mid), background var(--t-mid);
 }
 .header-logo{
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    flex-shrink: 0;
+    width:60px;
+    height:60px;
+    object-fit:contain;
+    flex-shrink:0;
 }
-.logo-name{
-    font-family: var(--font-display);
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-}
+
+
 
 .navbar.scrolled .logo-name{
     color: var(--text-dark);
 }
 
+
 .logo-tagline{
-    font-size: 9px;
-    font-weight: 600;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--orange);
-    margin-top: 4px;
+    font-size:9px;
+    font-weight:600;
+    letter-spacing:2px;
+    color:#E67E22;
+    text-transform:uppercase;
+    margin-top:4px;
 }
-.logo-slogan{
-    display:block;
-    font-size:12px;
-    font-weight:500;
+.hero-seo-title{
     color:#ffffff;
-    letter-spacing:1px;
-    margin:3px 0;
-    opacity:0.9;
+    font-family:'Montserrat',sans-serif;
+    font-size:24px;
+    font-weight:600;
+    line-height:1.5;
+    margin:25px 0 20px;
+    max-width:700px;
 }
 .logo-mark::before { display: none; }
 .navbar.scrolled .logo-mark { background: var(--orange-pale); }
 .navbar-logo:hover .logo-mark { transform: rotate(8deg) scale(1.06); }
 
-.logo-text { display: flex; flex-direction: column; line-height: 1; }
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    line-height:1.1;
+}
+.logo-slogan{
+    display:block;
+    font-size:13px;
+    font-weight:600;
+    color:#ffffff;
+    margin:2px 0;
+    line-height:1.2;
+}
 .logo-name { font-family: var(--font-display); font-size: 19px; font-weight: 700; color: var(--white); letter-spacing: 0.02em; transition: color 0.3s; }
 .navbar.scrolled .logo-name { color: var(--text-dark); }
-.logo-tagline { font-family: var(--font-body); font-size: 8px; font-weight: 600; letter-spacing: 0.26em; text-transform: uppercase; color: var(--orange); margin-top: 3px; }
 
-.navbar-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+.navbar-links { display: flex; align-items: center; gap: 32px; list-style: none; flex-wrap: nowrap; }
 .nav-link {
   font-family: var(--font-body); font-size: 11px; font-weight: 600;
   letter-spacing: 0.14em; text-transform: uppercase;
   color: rgba(255,255,255,0.88); text-decoration: none;
   position: relative; padding: 4px 0; transition: color var(--t-fast);
+  white-space: nowrap;
 }
 .navbar.scrolled .nav-link { color: var(--text-muted); }
 .nav-link::after {
@@ -285,6 +308,8 @@ ul, ol { list-style: none; }
   padding: 11px 22px; border-radius: 50px;
   transition: all var(--t-mid);
   box-shadow: 0 4px 16px rgba(230,126,34,0.35);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .navbar-cta::before { display: none; }
 .navbar-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(230,126,34,0.4); }
@@ -348,7 +373,7 @@ ul, ol { list-style: none; }
 .hero-side-stat-number { font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; color: var(--orange); line-height: 1; display: block; }
 .hero-side-stat-label { font-family: var(--font-body); font-size: 8.5px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(217,249,157,0.5); display: block; margin-top: 3px; }
 
-.hero-content { position: relative; z-index: 10; max-width: var(--container-max); margin: 0 auto; padding: var(--container-pad); width: 100%; }
+.hero-content { position: relative; z-index: 10; max-width: var(--container-max); margin: 0 auto; padding: var(--container-pad); width: 100%;  padding-top:90px; }
 .hero-label { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
 .hero-label-line { width: 40px; height: 2px; background: linear-gradient(90deg, var(--orange), var(--violet)); flex-shrink: 0; border-radius: 2px; }
 .hero-label-text { font-family: var(--font-body); font-size: 10px; font-weight: 700; letter-spacing: 0.36em; text-transform: uppercase; color: var(--orange); }
@@ -774,7 +799,10 @@ ul, ol { list-style: none; }
   :root{--container-pad:0 28px;}
   .navbar-links,.navbar-cta{display:none;}
   .menu-toggle{display:flex;}
-  .navbar-inner{padding:18px 28px;}
+  .navbar-inner{
+    padding:14px 28px;
+    min-height:90px;
+}
   .navbar.scrolled .navbar-inner{padding:12px 28px;}
   .about-grid{grid-template-columns:1fr;gap:44px;}
   .contact-grid{grid-template-columns:1fr;gap:44px;}
